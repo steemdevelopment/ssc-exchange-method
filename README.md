@@ -2,12 +2,12 @@ Script to allow a single endpoint for exchanges
 
 ## Prerequisites
 
-### ssc-proxie-script
+### [ssc-proxie-script](https://github.com/steemdevelopment/ssc-exchange-proxie)
 ``` Download ssc-proxie-script if your using the more advanced method```
 
 ``` Follow setup guide for ssc-proxie-script ```
 
-### steemsmartcontracts
+### [steemsmartcontracts](https://github.com/harpagon210/steemsmartcontracts/wiki/How-to-setup-a-Steem-Smart-Contracts-node)
 ``` Download steem smartcontracts if you wish to run your own node.```
 
 ``` If you do not wish to run your own node you will need to use a public node. ```
