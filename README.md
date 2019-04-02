@@ -1,2 +1,5 @@
-# ssc_exchange_method
-This method allow people to check methods
+# ssc-exchange-tranactions
+Script to allow a single endpoint
+
+
+Deposit and withdraw history
