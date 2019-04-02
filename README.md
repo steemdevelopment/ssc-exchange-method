@@ -35,7 +35,7 @@ Script to allow a single endpoint for exchanges
 ```curl -XPOST -H "Content-type: application/json" -d '{ "jsonrpc": "2.0", "method": "blockchain.getTransactionInfo", "params": { "txid": “taxid” }, "id": 1 }' 'http://localhost:3000/rpc'```
 
 #### Withdraw and Deposit history rpc method
-```curl -XPOST -H "Content-type: application/json" -d '{"method":"exchange.withdraw", "params": {"wif": "activekey", "symbol":"FREEX", "to": "freedomex", "quantity": "0.001", "memo": "Exchange Testing"}}' 'http://localhost:3000/rpc'```
+```curl -XPOST -H "Content-type: application/json" -d '{"method": "exchange.GET", "params": {"symbol": "COINNAME"}}' 'http://localhost:3000/rpc'```
 
 #### Withdraw rpc method
 ```curl -XPOST -H "Content-type: application/json" -d '{"method":"exchange.withdraw", "params": {"wif": "activekey", "symbol":"FREEX", "to": "freedomex", "quantity": "0.001", "memo": "Exchange Testing"}}' 'http://localhost:3000/rpc'```
