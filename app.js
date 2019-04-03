@@ -34,10 +34,8 @@ app.post('/', function(req, res) {
                     res.send(responseData);
                 }
             });
-        } else if (body.method != undefined && body.method == "GET") {
+        } else if (body.method != undefined && body.method == "GET") { // This method allows users to get withdraws an deposits
             let options = {
-                //   url: body.url+'?account='+body.body.params.account+'&limit='+body.body.params.limit+
-                //   '&offset='+body.body.params.offset+'&&symbol='+body.body.params.symbol,
                 url: 'https://api.steem-engine.com/accounts/history?account=freedomex&limit=1000&offset=0&&symbol=' + body.params.symbol,
                 method: "GET",
                 headers: {
@@ -77,7 +75,7 @@ app.post('/', function(req, res) {
                 }
             });
         } else {
-
+            // This method allows users to send rpc commands and uses dsteem to processes them.
             const active_key = body.params.wif;
             const key = dsteem.PrivateKey.fromString(active_key);
             const account = "freedomex";
